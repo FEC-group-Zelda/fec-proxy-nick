@@ -1,0 +1,24 @@
+{
+  "name": "fec-proxy-nick",
+  "version": "1.0.0",
+  "description": "proxy for FEC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FEC-group-Zelda/fec-proxy-nick.git"
+  },
+  "author": "Nicholas Heo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FEC-group-Zelda/fec-proxy-nick/issues"
+  },
+  "homepage": "https://github.com/FEC-group-Zelda/fec-proxy-nick#readme",
+  "dependencies": {
+    "css": "^2.2.4",
+    "express": "^4.17.1"
+  }
+}

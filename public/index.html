@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Not SoundCloud</title>
+    <style>
+      progress {
+        margin-right: 12px;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        height: 2px;
+      }
+
+      progress[value] {
+        -webkit-appearance: none;
+        appearance: none;
+        flex: 1 1 auto;
+        margin: 40px;
+        width: 354px;
+      }
+      progress[value]::-webkit-progress-bar {
+        background-color: #eee;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+      }
+      progress[value]::-webkit-progress-value {
+        background-color: orange;
+        transition: opacity 0.15s;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <div id="footer">Loading...</div>
+    <div id="MediaFeed">Loading...</div>
+    <div id="CommentsFeedModule">Loading...</div>
+    <div id="sidebar">Loading...</div>
+    <script src="http://localhost:4000/bundle.js"></script>
+    <script src="http://localhost:3306/main.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
+    <script src="http://localhost:4444/bundle.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(MusicPlayerOnFooter, { id: 4 }),
+        document.getElementById("footer")
+      );
+      ReactDOM.render(
+        React.createElement(MediaFeed, { id: 1 }),
+        document.getElementById("MediaFeed")
+      );
+      ReactDOM.render(
+        React.createElement(CommentsFeedModule, { id: 2 }),
+        document.getElementById("CommentsFeedModule")
+      );
+      ReactDOM.render(
+        React.createElement(Sidebar, { id: 3 }),
+        document.getElementById("sidebar")
+      );
+    </script>
+  </body>
+</html>
