@@ -6,5 +6,5 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "/../public")));
 
 app.listen(port, () => {
-  `Proxy server is running on port ${port}`;
+  console.log(`Proxy server is running on port ${port}`);
 });
