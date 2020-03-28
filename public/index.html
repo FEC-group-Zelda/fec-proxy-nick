@@ -8,6 +8,9 @@
     />
     <title>Not SoundCloud</title>
     <style>
+      body {
+        background-color: #f2f2f2;
+      }
       progress {
         margin-right: 12px;
         -webkit-flex-grow: 1;
@@ -31,6 +34,49 @@
         background-color: orange;
         transition: opacity 0.15s;
       }
+      #CommentsFeedModule {
+        position: absolute;
+        top: 430px;
+        left: 78px;
+      }
+      #sidebar {
+        position: absolute;
+        top: 397px;
+        right: 20px;
+      }
+      #MediaFeed {
+        position: absolute;
+        top: 46px;
+        left: 79px;
+      }
+
+      .header {
+        width: 100%;
+        font: 100 14px/1.5 Interstate, Lucida Grande, Arial, sans-serif;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        -webkit-font-smoothing: subpixel-antialiased;
+        background: #333;
+        height: 46px;
+        transition: height 0.2s ease-in-out;
+        z-index: 1;
+      }
+      .home {
+        margin-top: -6px;
+        background: #f50;
+        background: linear-gradient(#f70, #f30);
+        float: left;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 79px;
+        z-index: 1;
+      }
+      #whole {
+        background-color: white;
+      }
     </style>
   </head>
   <body>
@@ -42,10 +88,21 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
-    <div id="footer">Loading...</div>
+    <header class="header">
+      <div class="left-side">
+        <div class="home">
+          <img
+            src="https://fec-comments-images.s3.us-east-2.amazonaws.com/Soundcloud.png"
+          />
+        </div>
+      </div>
+    </header>
     <div id="MediaFeed">Loading...</div>
-    <div id="CommentsFeedModule">Loading...</div>
-    <div id="sidebar">Loading...</div>
+    <div id="whole">
+      <div id="CommentsFeedModule">Loading...</div>
+      <div id="sidebar">Loading...</div>
+    </div>
+    <div id="footer">Loading...</div>
     <script src="http://localhost:4000/bundle.js"></script>
     <script src="http://localhost:3306/main.js"></script>
     <script src="http://localhost:3005/bundle.js"></script>
