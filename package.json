@@ -19,6 +19,6 @@
   "homepage": "https://github.com/FEC-group-Zelda/fec-proxy-nick#readme",
   "dependencies": {
     "css": "^2.2.4",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
